@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Workin</title>
+  <meta name="description" content="Home workouts for your dumbbell and barbell set. Plate loading, progression, rest timer and a weekly streak.">
+  <meta name="theme-color" content="#101214">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Workin">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#today" aria-label="Workin home">
+      <img src="icons/icon.svg" alt="" width="28" height="28">
+      <span>Work<b>in</b></span>
+    </a>
+  </header>
+
+  <main id="view" class="wrap"></main>
+
+  <div id="rest" class="rest" role="timer" aria-live="polite" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#today" data-tab="today"><span>Today</span></a>
+    <a href="#history" data-tab="history"><span>History</span></a>
+    <a href="#plates" data-tab="plates"><span>Plates</span></a>
+    <a href="#settings" data-tab="settings"><span>Settings</span></a>
+  </nav>
+
+  <noscript><p class="wrap">Workin needs JavaScript turned on.</p></noscript>
+</body>
+</html>
